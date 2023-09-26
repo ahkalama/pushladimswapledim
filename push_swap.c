@@ -15,7 +15,7 @@
 void
 	ft_push_swap(char *av[])
 {
-	t_stacks		stack;
+	t_stacks		stack; //stacklerin tanımlanması
 	register int	size;
 	register int	index;
 
