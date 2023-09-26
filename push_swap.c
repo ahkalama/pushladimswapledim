@@ -34,7 +34,7 @@ void
 	stack.size_b = 0;
 	while (++index < size)
 		stack.a[index] = ft_ps_atoi(av[index], stack.a);
-	ft_check_repeat(stack.a, size);
+	ft_check_repeat(stack.a, size); // tekrar eden var mı kontrolü
 	ft_sort(&stack, size);
 	free(stack.a);
 	free(stack.b);
