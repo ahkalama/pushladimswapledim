@@ -39,6 +39,10 @@ void	ft_quicksort_3(t_stacks *stack, int len)
 	}
 }
 
+// ft_quicksort_3: Bu fonksiyon, yığın A'daki en fazla üç elemanı sıralar.
+// Üç farklı durumu ele alır: len = 3 ve stack->size_a = 3 ise, stack->a'daki üç elemanı sıralar;
+// len = 2 ise stack->a'daki iki elemanı sıralar; len = 3 ise, stack->a'daki üç elemanı sıralar.
+
 int	ft_sort_small_b(t_stacks *s, int len)
 {
 	if (len == 1)
