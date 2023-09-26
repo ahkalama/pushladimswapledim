@@ -22,7 +22,7 @@
 # include <fcntl.h>
 # include <unistd.h>
 
-typedef struct s_stacks
+typedef struct s_stacks // a ve b stacklerinin oluşturulduğu yer
 {
 	int	*a;
 	int	*b;
