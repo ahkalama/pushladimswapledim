@@ -129,7 +129,7 @@ int	ft_quicksort_a(t_stacks *stack, int len, int cnt)
 
 // ft_quicksort_a: Bu fonksiyon, yığın A'daki elemanları sıralar. 
 // Eğer yığın A'daki elemanlar zaten sıralıysa veya yalnızca üç veya daha az eleman varsa, sıralamayı tamamlar. 
-//Aksi takdirde, bir pivot eleman seçer ve bu pivot etrafında elemanları iki alt diziye böler.
+// Aksi takdirde, bir pivot eleman seçer ve bu pivot etrafında elemanları iki alt diziye böler.
 
 int	ft_quicksort_b(t_stacks *stack, int len, int cnt)
 {
