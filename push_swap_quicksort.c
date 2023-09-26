@@ -143,3 +143,9 @@ int	ft_quicksort_b(t_stacks *stack, int len, int cnt)
 	return (ft_quicksort_a(stack, items / 2 + items % 2, 0)
 		&& ft_quicksort_b(stack, items / 2, 0));
 }
+// ft_quicksort_b: Bu fonksiyon, yığın B'deki elemanları sıralar. 
+// Eğer yığın B'deki elemanlar zaten sıralıysa veya yalnızca üç veya daha az eleman varsa, 
+// sıralamayı tamamlar. Aksi takdirde, bir pivot eleman seçer ve 
+// bu pivot etrafında elemanları iki alt diziye böler. 
+// Ardından bu iki alt diziyi sıralamak için kendi üzerinde yeniden çağrılır.
+
