@@ -86,6 +86,10 @@ int	ft_get_mediane(int *pivot, int *stack, int size)
 	return (1);
 }
 
+// ft_get_mediane: Bu fonksiyon, bir dizinin ortanca elemanını hesaplar. 
+// Dizinin ortanca elemanını bulmak için, 
+// diziyi geçici bir diziye kopyalar, bu diziyi sıralar ve ardından ortanca elemanı belirler.
+
 int	ft_quicksort_a(t_stacks *stack, int len, int cnt)
 {
 	int	pivot;
@@ -114,6 +118,7 @@ int	ft_quicksort_a(t_stacks *stack, int len, int cnt)
 		&& ft_quicksort_b(stack, items / 2, 0));
 	return (1);
 }
+
 // ft_quicksort_a: Bu fonksiyon, yığın A'daki elemanları sıralar. 
 // Eğer yığın A'daki elemanlar zaten sıralıysa veya yalnızca üç veya daha az eleman varsa, sıralamayı tamamlar. 
 //Aksi takdirde, bir pivot eleman seçer ve bu pivot etrafında elemanları iki alt diziye böler.
