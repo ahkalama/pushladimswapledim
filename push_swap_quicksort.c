@@ -12,8 +12,7 @@
 
 #include "push_swap.h"
 
-void
-	ft_quicksort_3(t_stacks *stack, int len)
+void	ft_quicksort_3(t_stacks *stack, int len)
 {
 	if (len == 3 && stack->size_a == 3)
 		ft_sort_three_a(stack);
@@ -40,8 +39,7 @@ void
 	}
 }
 
-int
-	ft_sort_small_b(t_stacks *s, int len)
+int	ft_sort_small_b(t_stacks *s, int len)
 {
 	if (len == 1)
 		ft_pa(s, 0);
@@ -68,8 +66,7 @@ int
 	return (0);
 }
 
-int
-	ft_get_mediane(int *pivot, int *stack, int size)
+int	ft_get_mediane(int *pivot, int *stack, int size)
 {
 	int	*tmp_stack;
 	int	index;
@@ -89,8 +86,7 @@ int
 	return (1);
 }
 
-int
-	ft_quicksort_a(t_stacks *stack, int len, int cnt)
+int	ft_quicksort_a(t_stacks *stack, int len, int cnt)
 {
 	int	pivot;
 	int	items;
@@ -119,8 +115,7 @@ int
 	return (1);
 }
 
-int
-	ft_quicksort_b(t_stacks *stack, int len, int cnt)
+int	ft_quicksort_b(t_stacks *stack, int len, int cnt)
 {
 	int	pivot;
 	int	items;
