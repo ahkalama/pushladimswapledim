@@ -70,6 +70,10 @@ int	ft_sort_small_b(t_stacks *s, int len)
 	return (0);
 }
 
+// ft_sort_small_b: Bu fonksiyon, yığın B'deki belirli sayıdaki elemanları sıralar.
+// Özellikle, len = 1 ise stack->b'deki bir elemanı alır ve yığın A'ya taşır;
+// len = 2 ise stack->b'deki iki elemanı sıralar; len = 3 ise, stack->b'deki üç elemanı sıralar.
+
 int	ft_get_mediane(int *pivot, int *stack, int size)
 {
 	int	*tmp_stack;
