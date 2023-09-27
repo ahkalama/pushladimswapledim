@@ -12,8 +12,8 @@
 
 #include "push_swap.h"
 
-void
-	ft_opt(t_stacks *stack, char *opt)
+// Bu fonksiyonun amacı, optimize edilmiş komutların verilen yığınlar üzerinde uygulanabilmesini sağlamaktır. 
+void	ft_opt(t_stacks *stack, char *opt)
 {
 	if (ft_strcmp(opt, "sa\n"))
 		ft_sa(stack, 1);
@@ -39,8 +39,7 @@ void
 		ft_pb(stack, 1);
 }
 
-int
-	ft_check_opt(char *opt, t_stacks *stack)
+int	ft_check_opt(char *opt, t_stacks *stack)
 {
 	if (ft_strcmp(opt, "sa\n") || ft_strcmp(opt, "sb\n")
 		|| ft_strcmp(opt, "ss\n") || ft_strcmp(opt, "ra\n")
@@ -62,8 +61,7 @@ int
 	}
 }
 
-void
-	ft_checker_continue(t_stacks *stack)
+void	ft_checker_continue(t_stacks *stack)
 {
 	char		*opt;
 
@@ -91,8 +89,7 @@ void
 	}
 }
 
-void
-	ft_checker(char *av[])
+void	ft_checker(char *av[])
 {
 	t_stacks		stack;
 	register int	size;
@@ -117,8 +114,7 @@ void
 	ft_checker_continue(&stack);
 }
 
-int
-	main(int ac, char *av[])
+int	main(int ac, char *av[])
 {
 	if (ac > 1)
 	{
